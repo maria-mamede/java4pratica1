@@ -15,26 +15,17 @@ public class AppSupermercado {
             put(felipe.getId(), felipe);
         }};
 
-        myMap.forEach((key,value) -> {
-            System.out.println(value);
-        });
+        System.out.println("Antes do remove");
+        System.out.println(myMap);
 
-//        for (Cliente c:myMap ) {
-//            System.out.println(c);
-//        }
-//
-//        myMap.remove(julia);
-//
-//        for (Cliente c:myMap ) {
-//            System.out.println(c);
-//        }
+        myMap.remove(1);
+
+        System.out.println("Depois do remove");
+        System.out.println(myMap);
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite o id:");
         int teclado = scanner.nextInt();
         System.out.println(myMap.get(teclado));
-
-
-
     }
 }
